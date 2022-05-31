@@ -1,10 +1,9 @@
-//2225081G
 public class Play {
 	
 	public static void main(String[] args) {			
 		
-		Board board = new Board(25,25);			//create board
-									
+		Board board = new Board(5,5);			//create board
+								
 		board.getSquares()[1][3].setDelta(-3);	//set deltas
 		board.getSquares()[3][4].setDelta(3);
 		board.getSquares()[3][0].setDelta(-6);
@@ -13,7 +12,7 @@ public class Play {
 		board.getSquares()[4][3].setDelta(-5);
 		
 		board.addPlayer('E');			//add players
-		board.addPlayer('C');
+		board.addHumanPlayer('C');
 
 		board.takeTurns(board);			//play game	
 	}
